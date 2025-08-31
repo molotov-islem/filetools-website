@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo isset($pageTitle) ? $pageTitle : 'FileTools'; ?></title>
+    <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : SITE_DESCRIPTION; ?>">
+    <meta name="keywords" content="file converter, PDF converter, image converter, compress PDF, online tools, file tools">
+    
+     Open Graph 
+    <meta property="og:title" content="FileTools - All-in-one File Tools. Fast. Free. Online.">
+    <meta property="og:description" content="Convert, Compress & Manage files in seconds. PDF, Image, Office tools and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo SITE_URL; ?>">
+    
+     Favicon 
+    <link rel="icon" type="image/png" href="/images/filetools-logo.png">
+    <link rel="apple-touch-icon" href="/images/filetools-logo.png">
+    
+     CSS 
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+     Skip Links 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#tools" class="skip-link">Skip to tools</a>
+
+     Header 
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                 Logo 
+                <div class="logo">
+                    <a href="/" aria-label="FileTools - Go to homepage">
+                        <img src="/images/filetools-logo.png" alt="FileTools logo" width="32" height="32">
+                    </a>
+                </div>
+
+                 Desktop Navigation 
+                <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    <a href="#tools" class="nav-link">Tools</a>
+                    <a href="#featured" class="nav-link">Featured</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                 Search and Controls 
+                <div class="header-controls">
+                    <div class="search-container">
+                        <input type="search" id="desktop-search" placeholder="Search tools..." class="search-input" aria-label="Search tools">
+                    </div>
+                    <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()">
+                        <span class="theme-icon sun">☀️</span>
+                        <span class="theme-icon moon">🌙</span>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" onclick="toggleMobileMenu()">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+
+             Mobile Navigation 
+            <div class="mobile-menu" id="mobile-menu">
+                <nav class="mobile-nav">
+                    <a href="#" class="mobile-nav-link">Home</a>
+                    <a href="#tools" class="mobile-nav-link">Tools</a>
+                    <a href="#featured" class="mobile-nav-link">Featured</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                    <div class="mobile-search">
+                        <input type="search" placeholder="Search tools..." class="search-input">
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+     Main Content 
+    <main id="main-content">
+         Hero Section 
+        <section class="hero-section">
+            <div class="hero-background">
+                <iframe 
+                    src="https://my.spline.design/celestialflowabstractdigitalform-ilZcPWTn14AB7KguagbiHp6g/"
+                    class="hero-iframe"
+                    style="pointer-events: none; transform: scale(1.5); transform-origin: center center;">
+                </iframe>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        All-in-one File Tools. 
+                        <span class="text-primary animate-pulse">Fast.</span>
+                        <span class="text-secondary">Free.</span>
+                        <span class="text-white">Online.</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Convert, Compress & Manage files in seconds. No downloads, no sign-ups, just results.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="scrollToTools()">
+                            Start Converting
+                            <span class="btn-icon">→</span>
+                        </button>
+                        <button class="btn btn-outline btn-lg" onclick="scrollToTools()">
+                            Browse Tools
+                        </button>
+                    </div>
+                </div>
+                
+                 Feature highlights 
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon primary">⚡</div>
+                        <h3 class="feature-title">Lightning Fast</h3>
+                        <p class="feature-desc">Process files in seconds with our optimized algorithms</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon secondary">🛡️</div>
+                        <h3 class="feature-title">100% Secure</h3>
+                        <p class="feature-desc">Your files are processed locally and never stored</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon primary">🕒</div>
+                        <h3 class="feature-title">Always Available</h3>
+                        <p class="feature-desc">Access your tools 24/7 from any device</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         Featured Tools Section 
+        <section id="tools" class="tools-section">
+            <div class="container">
+                <h2 class="section-title">Featured Tools</h2>
+                <div class="tools-grid" id="tools-grid">
+                     Tools will be loaded dynamically 
+                </div>
+            </div>
+        </section>
+    </main>
+
+     Footer 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="/images/filetools-logo.png" alt="FileTools" width="24" height="24">
+                    <span>FileTools</span>
+                </div>
+                <p class="footer-text">© 2024 FileTools. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     JavaScript 
+    <script src="/js/app.js"></script>
+    <script src="/js/components.js"></script>
+</body>
+</html>
