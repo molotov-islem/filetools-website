@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://filetools.app/sitemap.xml
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all file conversion tools
+Allow: /pdf-to-word
+Allow: /jpg-to-png
+Allow: /compress-pdf
