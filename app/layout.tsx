@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://filetools.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://filetools.website"),
   alternates: {
     canonical: "/",
   },
@@ -60,6 +60,10 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: "FileTools",
   },
+}
+
+export const viewport = {
+  themeColor: "#ffffff",
 }
 
 export default function RootLayout({
